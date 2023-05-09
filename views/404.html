@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Node.js Server-Side Routing</title>
+    <title>Node.js Server-side Routing</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -82,48 +82,6 @@
       ul {
         margin-top: 0;
       }
-      form {
-        display: flex;
-        flex-direction: column;
-        max-width: 500px;
-        margin: 0 auto;
-      }
-
-      label {
-        font-weight: bold;
-        margin-bottom: 8px;
-      }
-
-      input[type="text"],
-      input[type="email"],
-      textarea {
-        padding: 10px;
-        margin-bottom: 16px;
-        border-radius: 4px;
-        border: 1px solid #ccc;
-        font-size: 16px;
-      }
-
-      input[type="submit"] {
-        background-color: #4caf50;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-
-      input[type="submit"]:hover {
-        background-color: #45a049;
-      }
-
-      input[type="submit"]:active {
-        background-color: #3e8e41;
-      }
-
-      input[type="submit"]:focus {
-        outline: none;
-      }
 
       /* Responsive styles */
       @media screen and (max-width: 600px) {
@@ -156,10 +114,11 @@
         }
       }
     </style>
+    <link rel="icon" href="data:," />
   </head>
   <body>
     <header>
-      <h1>Node.js Server-Side Routing</h1>
+      <h1>Node.js Server-side Routing</h1>
       <nav>
         <ul>
           <li><a href="http://localhost:3000">Home</a></li>
@@ -170,17 +129,12 @@
     </header>
     <main>
       <section>
-        <h2>Contact Me</h2>
-        <form action="#" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-          <input type="submit" value="Send" />
-          <p>*<i>the form is just for demo</i></p>
-        </form>
+        <h2>Page Not Found</h2>
+        <p>
+          Oops! The page you are looking for cannot be found. Please check the
+          URL and try again.
+        </p>
+        <p><a href="http://localhost:3000">Return to Home &#128279;</a></p>
       </section>
     </main>
     <footer>
