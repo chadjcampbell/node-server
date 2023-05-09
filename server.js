@@ -4,6 +4,8 @@ const fs = require("fs");
 http
   .createServer((req, res) => {
     res.setHeader("Content-Type", "text/html");
+    res.statusCode = 200;
+    console.log(req.url);
     let path = "./views/";
     switch (req.url) {
       case "/":
@@ -18,9 +20,10 @@ http
       default:
         path += "404.html";
     }
-    fs.readFileSync(path, (err, data) => {
+    fs.readFile(path, (err, data) => {
       if (err) {
         console.log(err);
+        res.statusCode = 404;
         res.end();
       } else {
         res.end(data);

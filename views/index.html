@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Node.js Server-side Routing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      footer > * {
+        margin: 0.5rem;
+      }
+
+      header h1 {
+        margin: 0;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      nav li {
+        margin-right: 20px;
+      }
+
+      nav li:last-child {
+        margin-right: 0;
+      }
+
+      nav a {
+        color: #fff;
+        font-size: 18px;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      section:last-child {
+        margin-bottom: 0;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      pre {
+        background-color: #f8f8f8;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+
+      pre code {
+        font-family: Consolas, monospace;
+      }
+
+      ul {
+        margin-top: 0;
+      }
+
+      /* Responsive styles */
+      @media screen and (max-width: 600px) {
+        header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        header h1 {
+          margin-bottom: 10px;
+        }
+
+        nav {
+          margin-top: 20px;
+        }
+
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        nav li {
+          margin: 10px 0;
+        }
+
+        main {
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Node.js Server-side Routing</h1>
+      <nav>
+        <ul>
+          <li><a href="http://localhost:3000">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>What is Node.js Server-side Routing?</h2>
+        <p>
+          Node.js is a server-side JavaScript runtime environment that enables
+          developers to build scalable and high-performance web applications.
+          One of the key features of Node.js is its ability to handle
+          server-side routing.
+        </p>
+        <p>
+          Server-side routing refers to the process of handling incoming HTTP
+          requests and returning an appropriate response. In Node.js,
+          server-side routing can be achieved using the built-in
+          <code>http</code> module or by using third-party routing frameworks
+          such as Express.js.
+        </p>
+      </section>
+      <section>
+        <h2>Why use Node.js Server-side Routing?</h2>
+        <p>
+          Server-side routing is a critical component of web application
+          development as it enables developers to handle incoming requests and
+          provide an appropriate response. Node.js server-side routing offers a
+          number of benefits, including:
+        </p>
+        <ul>
+          <li>
+            Scalability: Node.js is designed to handle large volumes of
+            requests, making it ideal for building scalable web applications.
+          </li>
+          <li>
+            Performance: Node.js uses an event-driven, non-blocking I/O model
+            that makes it highly performant.
+          </li>
+          <li>
+            Flexibility: Node.js can be used to build a wide range of web
+            applications, from simple APIs to complex real-time applications.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Getting Started with Node.js Server-side Routing</h2>
+        <p>
+          To get started with Node.js server-side routing, you will need to have
+          Node.js installed on your machine. Once you have Node.js installed,
+          you can use the built-in <code>http</code> module or a third-party
+          routing framework like Express.js to handle server-side routing.
+        </p>
+        <p>
+          Here is an example of how to create a simple Node.js server using the
+          built-in <code>http</code> module:
+        </p>
+        <pre><code>const http = require('http');
+const server = http.createServer((req, res) =&gt; {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello, World!');
+});
+server.listen(3000, () =&gt; {
+  console.log('Server running at http://localhost:3000/');
+});</code></pre>
+        <p>
+          This code creates a basic HTTP server that listens on port 3000 and
+          returns a "Hello, World!" message when accessed.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright ChadJCampbell 2023</p>
+      <a href="chadjcampbell.com">ChadJCampbell Dev Portfolio &#128279;</a>
+    </footer>
+  </body>
+</html>
